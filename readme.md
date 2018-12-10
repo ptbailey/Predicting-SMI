@@ -25,7 +25,7 @@ the data frame consists of the features data for years 2014-2017 segmented by st
 <img src="images/dataframe.png" style="width: 500px;"/>
 
 ### Matrix screenshot of pair plots of the features and dependent variable:
-<img src="images/dataframe.png" style="width: 500px;"/>
+<img src="images/matrix.png" style="width: 500px;"/>
 
 As you can see in the first column, where the dependent variable is on the y-axis, there are some relationships visible before doing any feature selection/engineering. i.e. the relationship between SMI and drug arrests seems to be linear.
 
