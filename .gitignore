@@ -1,0 +1,9 @@
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.npy
+*.npy
+.DS_Store
+*.ipynb_checkpoints
+*.pytest_cache
+*.pyc
+*__pycache__
