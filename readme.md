@@ -30,22 +30,23 @@ The dataframe consists of data for years 2014-2017 segmented by states. Selectio
 
 ## Regression Model:
 
-For our regression model, we went through several iterations. The difference amongst those iterations are detailed below.
+Below are several iterations of regression model. The difference amongst those iterations are detailed along with yielded metrics.
 
 ### Iteration 1:
-<img src="images/iter1.png" style="width: 500px;"/>
+<img src="images/iter1.png" />
 
-Our R-squared, from the model is 0.826. That's a good fit, but the p-values for the featured variables are above 0.05. We decided to scale our split data (train set and test set) and use a polynomial fit with a degree = 2.
+R-squared value of 0.826 is a great result. However, the p-values for the featured variables > 0.05.  
+Next iteration scaled the data (train and test set) and used a polynomial fit with a degree = 2.
 
 ### Iteration 2:
-<img src="images/iter2.png" style="width: 500px;"/>
+<img src="images/iter2.png"/>
 
-Our R-squared, from this model is 0.923. This is better than our previous model. There are still some p-values way above 0.05; we have to get rid of these variables. But because there are so many variables to look at, we'll use a Features Filtered Method: Variance Test.
+R-squared of 0.923 is better than previous model's R-squared. There were still some variables with p-values way above 0.05 that needed to be removed. Next model used filtered method: variance test.
 
 ### Iteration 3:
-<img src="images/iter3.png" style="width: 500px;"/>
+<img src="images/iter3.png"/>
 
-Our p-values were still above 0.05, despite getting rid of some of our data. So we turn to a wrapper method.
+Still had some variables with p-values > 0.05. Next model used wrapper method.
 
 ### Iteration 4:
 <img src="images/iter4.png" style="width: 500px;"/>
