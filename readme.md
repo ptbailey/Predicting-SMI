@@ -69,8 +69,6 @@ Below are some illustrations of the final linear model.
 Regression Model:
 <img src="images/regressionmodel.png"/>
 
-The model tells us that predicting Serious Mental Illness population for a given state in a given year can be determined using the following formula. e.g. If the unemployment rate was to go up 1%, SMI counts will go down 20.1. It's an interesting interpretation to finding the number of SMI cases. It should be noted that for the final model the root-mean-squared-error (RMSE) was 70.72, and standardized RMSE was 0.35. This means that our predicted value will be on average +/-70.72 from the actual value.
+The model tells us that predicting Serious Mental Illness population for a given state in a given year can be determined using the following formula. e.g. If the unemployment rate was to go up 1%, SMI counts will go down 20.1. It's an interesting interpretation to finding the number of SMI cases. It should be noted that for the final model the root-mean-squared-error (RMSE) was 70.72, and standardized RMSE was 0.35. This means that predicted value will be on average +/-70.72 from the actual value.
 
 We also did a cross validation (K-Fold) on our train data, and got an average R-squared value of 0.58. This means that our model explains 58% of the variability of the response data around its mean.
-
-(Please look at our Regression file to see a quick Lasso and Ridge analysis)
