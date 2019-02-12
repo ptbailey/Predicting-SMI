@@ -32,44 +32,44 @@ The dataframe consists of data for years 2014-2017 segmented by states. Selectio
 
 Below are several iterations of regression model. The difference amongst those iterations are detailed along with yielded metrics.
 
-### Iteration 1:
+### <font color = 'blue'> Iteration 1:
 <img src="images/iter1.png" />
 
 R-squared value of 0.826 is a great result. However, the p-values for the featured variables > 0.05.  
 Next iteration scaled the data (train and test set) and used a polynomial fit with a degree = 2.
 
-### Iteration 2:
+### <font color = 'blue'> Iteration 2:
 <img src="images/iter2.png"/>
 
 R-squared of 0.923 is better than previous model's R-squared. There were still some variables with p-values way above 0.05 that needed to be removed. Next model used filtered method: variance test.
 
-### Iteration 3:
+### <font color = 'blue'> Iteration 3:
 <img src="images/iter3.png"/>
 
 Still had some variables with p-values > 0.05. Next model used wrapper method.
 
-### Iteration 4:
-<img src="images/iter4.png" style="width: 500px;"/>
+### <font color = 'blue'> Iteration 4:
+<img src="images/iter4.png"/>
 
-Our R-squared looks great, and most of our p-values are well below 0.05, except one variable. We decide to get rid of this variable.
+Most variables' p-values are well below 0.05 except one variable. Decided to remove this variable.
 
-### Iteration 5:
-<img src="images/iter5.png" style="width: 500px;"/>
+### <font color = 'blue'> Iteration 5:
+<img src="images/iter5.png"/>
 
-Our R-squared value is 0.865, all the p-values of the features are lower than 0.05, and we are satisfied with our RMSE and stddev values. We therefore conclude our Regression Model Analysis and found our best fit model for our data.
+Final R-squared value was 0.865 and all features' p-values < 0.05, and RMSE and stddev values are satisfactory. Therefore conclude regression model analysis and found best fit model for our data.
 
-Below are some illustrations of our final linear model.
+Below are some illustrations of the final linear model.
 
 #### Residual Graph:
-<img src="images/residualgraph.png" style="width: 500px;"/>
+<img src="images/residualgraph.png" />
 
 #### Heat Map:
-<img src="images/heatmap.png" style="width: 500px;"/>
+<img src="images/heatmap.png" />
 
 Regression Model:
 <img src="images/regressionmodel.png" style="width: 500px;"/>
 
-Our model tells us that predicting the number of serious mental illness population for a given state in a given year can be determined using the following formula. e.g. If the unemployment rate was to go up 1%, smi counts will go down 20.1. It's an interesting interpretation to finding the number of smi cases. It should be noted that for our final model the root-mean-squared-error (RMSE) was 70.72, and our standardized RMSE was 0.35. This means that our predicted value will be on average +/-70.72 from the actual value.
+The model tells us that predicting Serious Mental Illness population for a given state in a given year can be determined using the following formula. e.g. If the unemployment rate was to go up 1%, SMI counts will go down 20.1. It's an interesting interpretation to finding the number of SMI cases. It should be noted that for the final model the root-mean-squared-error (RMSE) was 70.72, and our standardized RMSE was 0.35. This means that our predicted value will be on average +/-70.72 from the actual value.
 
 We also did a cross validation (K-Fold) on our train data, and got an average R-squared value of 0.58. This means that our model explains 58% of the variability of the response data around its mean.
 
