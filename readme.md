@@ -1,4 +1,4 @@
-# Predicting Serious Mental Illness with a Regression Model
+# Predicting Serious Mental Illness Population with a Regression Model
 
 ## Project Definition:
 Can we predict the number of Serious Mental Illnesses (SMI)† in the U.S with certain features?
@@ -12,17 +12,16 @@ Can we predict the number of Serious Mental Illnesses (SMI)† in the U.S with c
 - Number of drug labs found††
 - Whether the state was Republican or Democratic
 
-Note:
-† Serious mental illness (SMI), as defined by the National Survey on Drug Use (NSDUH) is defined as having a diagnosable mental, behavioral, or emotional disorder, other than a developmental or substance use disorder, as assessed by the Mental Health Surveillance Study (MHSS) Structured Clinical Interview for the Diagnostic and Statistical Manual of Mental Disorders—Fourth Edition—Research Version—Axis I Disorders (MHSS-SCID), which is based on the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV). SMI includes individuals with diagnoses resulting in serious functional impairment. For details, see Section B of the ""2011-2012 NSDUH: Guide to State Tables and
-Summary of Small Area Estimation Methodology"" at http://www.samhsa.gov/data/."
+Note:   
+† Serious mental illness (SMI), as defined by the National Survey on Drug Use (NSDUH) is defined as having a diagnosable mental, behavioral, or emotional disorder, other than a developmental or substance use disorder, as assessed by the Mental Health Surveillance Study (MHSS) Structured Clinical Interview for the Diagnostic and Statistical Manual of Mental Disorders—Fourth Edition—Research Version—Axis I Disorders (MHSS-SCID), which is based on the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV). SMI includes individuals with diagnoses resulting in serious functional impairment. For details, see Section B of the ""2011-2012 NSDUH: Guide to State Tables and Summary of Small Area Estimation Methodology"" at http://www.samhsa.gov/data/."
 
 †† DEA's website contains addresses of some locations where law enforcement agencies reported they found chemicals or other items that indicated the presence of either clandestine drug laboratories or dumpsites. In most cases, the source of the entries is not the Department, and the Department has not verified the entry and does not guarantee its accuracy.
 
 ## Constructing the Data Frame:
-the data frame consists of the features data for years 2014-2017 segmented by states. Selecting the certain features was a mix of intuition and what data was available. Although, as noted, the SMI does not include substance use disorders, we want to test if the number of drug arrests can be one of the predictors of SMI #s in a state. We also wanted certain independent variables, such as population demographics (gender and race). It could be argued that unemployment rate is not independent of the other features, but that is why we check the correlation amongst all the independent variables. We're also curious to see if the number of drug labs found in a state is correlated to the number of SMI within the state. As well as determining whether the political stance of a state is a good indicator of SMI numbers.
+The dataframe consists of data for years 2014-2017 segmented by states. Selection of features was a mix of intuition and what was available, e.g. demographics like race and gender per state. Although, as noted, the SMI does not include substance use disorders, we wanted to test if the number of drug arrests can be one of the predictors of SMI population in a given state. It could be argued that unemployment rate is not independent of the other features; that is why we checked the correlation amongst all the set independent variables. We were also curious to see if the number of drug labs found in a state and a state's political stance is correlated to and are good indicators of the SMI population.
 
-### Dataframe screenshot:
-<img src="images/dataframe.png" style="width: 500px;"/>
+### Dataframe :
+<img src="images/dataframe.png"/>
 
 ### Matrix screenshot of pair plots of the features and dependent variable:
 <img src="images/matrix.png" style="width: 500px;"/>
