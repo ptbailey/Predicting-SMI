@@ -12,7 +12,7 @@ Can we predict the number of Serious Mental Illnesses (SMI)† in the U.S with c
 - Number of drug labs found††
 - Whether the state was Republican or Democratic
 
-Note:   
+**Note:**   
 † Serious mental illness (SMI), as defined by the National Survey on Drug Use (NSDUH) is defined as having a diagnosable mental, behavioral, or emotional disorder, other than a developmental or substance use disorder, as assessed by the Mental Health Surveillance Study (MHSS) Structured Clinical Interview for the Diagnostic and Statistical Manual of Mental Disorders—Fourth Edition—Research Version—Axis I Disorders (MHSS-SCID), which is based on the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV). SMI includes individuals with diagnoses resulting in serious functional impairment. For details, see Section B of the ""2011-2012 NSDUH: Guide to State Tables and Summary of Small Area Estimation Methodology"" at http://www.samhsa.gov/data/."
 
 †† DEA's website contains addresses of some locations where law enforcement agencies reported they found chemicals or other items that indicated the presence of either clandestine drug laboratories or dumpsites. In most cases, the source of the entries is not the Department, and the Department has not verified the entry and does not guarantee its accuracy.
@@ -23,10 +23,10 @@ The dataframe consists of data for years 2014-2017 segmented by states. Selectio
 ### Dataframe :
 <img src="images/dataframe.png"/>
 
-### Matrix screenshot of pair plots of the features and dependent variable:
-<img src="images/matrix.png" style="width: 500px;"/>
+### Pair plot matrix of the features and dependent variable:
+<img src="images/matrix.png"/>
 
-As you can see in the first column, where the dependent variable is on the y-axis, there are some relationships visible before doing any feature selection/engineering. i.e. the relationship between SMI and drug arrests seems to be linear.
+**As you can see in the first column, where the dependent variable is on the y-axis, there are some relationships visible before doing any feature selection/engineering. e.g. the relationship between SMI and drug arrests seems to be linear.**
 
 ## Regression Model:
 
